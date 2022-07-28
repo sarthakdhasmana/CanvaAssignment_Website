@@ -1,0 +1,1707 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/* scroll-bar */
+/* ::-webkit-scrollbar{
+    width: 1.3rem;
+}
+::-webkit-scrollbar-track{
+    color: #FFFFFF;
+    padding: 1em;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(176.54deg, #09BAD0 0%, #6E39E7 98.36%);
+    border-radius: 43px;
+} */
+/* **********************Hero-section-STYLIING*************************/
+.hero-section{
+    background: url(./Assets/hero-section/hero-section-background.svg);
+    background-size: auto;
+    height: 100vh;
+    color: #FFFFFF;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.hero_left-section{
+    padding: 122px 0px 0px 195px;
+    width: 50%;
+}
+.canva-logo{
+    padding-bottom: 22px;
+    height: 5rem;
+}
+.hero_tagline{
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 99px;
+}
+.releasing-section{
+    margin-top: 92px;
+}
+.releasing-title{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 37px;
+    margin-bottom: 30px;
+}
+.countDown_boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 31rem;
+}
+.countDown-box{
+    width: 100px;
+    height: 100px;
+    background: #F4F4F6;
+    border-radius: 13px;
+    text-align: center;
+    padding: 15px 0px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.digit{
+    font-weight: bold;
+    font-size: 38px;
+   color: #1E283C;
+}
+.time{
+    font-weight: 600;
+    font-size: 16px;
+    color: #676779;
+}
+.hero_right-section{
+    width: 45%;
+    position: relative;
+}
+/* phone-illustrations */
+.phone-illustration-2{
+    position: absolute;
+    top: -25rem;
+    right: 22rem;
+    transform: rotate(30deg);
+    transition: 800ms;
+}
+.phone-illustration-2.active{
+    top: -32rem;
+}
+.phone-illustration-3{
+    position: absolute;
+    right: -2rem;
+    top: -25rem;
+    transform: rotate(30deg);
+}
+.phone-illustration-1{
+    transition: 800ms;
+    position: absolute;
+    right: 19rem;
+    top: 10.5rem;
+    transform: rotate(30deg);
+}
+.phone-illustration-1.active{
+    right: 30rem;
+    top: 11.5rem;
+    transform: scale(1.3, 1.2);
+}
+.phone-illustration-4{
+    position: absolute;
+    top: 4rem;
+    right: -12rem;
+    transform: rotate(30deg);
+}
+
+.hidden,.hidden-img,.hid{
+    display: none;
+}
+
+
+/* **********************Grid-section-STYLIING*************************/
+.grid-section{
+    padding: 100px 0px;
+    text-align: center;
+}
+.grid_wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.auto{
+    margin: auto;
+}
+.flex_area_1{
+    display: grid;
+    grid-template-columns: 8.5rem 36.5rem 17rem;
+    grid-column-gap: 40px;
+    justify-content: center;
+}
+.flex_area_2{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 30rem 7.5rem 25.5rem;
+    grid-column-gap: 40px;
+    justify-content: center;
+}
+.flex_area_3{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 30rem 26rem 7.5rem;
+    grid-column-gap: 40px;
+    justify-content: center;
+}
+.animation_area{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.canva_icon:hover,.big_box:hover,.small_box:hover,.box:hover{
+    box-shadow: -3px -3px 24px rgba(30, 40, 60, 0.06), 12px 12px 24px rgba(30, 40, 60, 0.16);
+    transform: scale(1.008, 1.008) translateY(-4px);
+}
+.canva_icon,.big_box,.small_box,.box{
+    background: #F2F5FA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 500ms;
+}
+.canva__icon{
+    height: 75%;
+}
+.canva_icon,.small_box,.big_box,.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.box{
+    font-size: 24px;
+    line-height: 30px; 
+    text-align: center;
+    color: #1E283C;
+    padding: 15px 0px;
+}
+.canva_icon{
+    padding: 5px 0px;
+}
+.big_box{
+    font-size: 52px;
+    line-height: 35px;
+    text-align: center;
+    color: #1E283C;
+    padding: 40px 0px;
+}
+.small_box{
+    font-size: 44px;
+    line-height: 41px;
+    text-align: center;
+    color: #1E283C;
+    padding: 25px 0px;
+}
+
+
+/* **********************Feature-section-STYLIING*************************/
+.feature-section{
+    background: #F2F5FA;
+    padding: 87px 209px 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature-img{
+    display: inline-block;
+    position: relative;
+}
+.elipse-background{
+    display: inline-block;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    background: linear-gradient(137.07deg,#1F9FD5 15.64%, #792AE9 85.71%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.feature_saly-image{
+    width: 40rem;
+}
+.saly-img{
+    position: absolute;
+    top: 0rem;
+    left: -4rem;
+    animation: MoveUpDown 4s linear infinite;
+}
+@keyframes MoveUpDown {
+    0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+              transform: translateY(20px);
+            }
+            
+        }
+        
+        .feature_section-title{
+            font-weight: bold;
+            font-size: 44px;
+            line-height: 68px;
+            color: #1E283C;
+            margin-bottom: 28px;
+        }
+        .features{
+            width: 47%;
+            position: relative;
+        }
+        .title_Desc{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 35px;
+            color: #817D8E;
+            width: 34rem;
+        }
+        .feature{
+            display: flex;
+            background: #ffffff;
+            align-items: center;
+            transition: 500ms;
+            border-radius: 16px;
+            box-shadow: -3px -3px 24px rgb(30 40 60 / 3%), 12px 12px 24px rgb(30 40 60 / 8%);
+    padding: 10px;
+}
+.feature:hover{
+    box-shadow: -3px -3px 24px rgba(30, 40, 60, 0.06), 12px 12px 24px rgba(30, 40, 60, 0.16);
+    transform: scale(1.008, 1.008) translateY(-4px);
+}
+.feature_cards{
+    margin-top: 77px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+}
+.feature_det{
+    padding-left: 15px;
+}
+.small-elipse{
+    margin-bottom: 20px;
+}
+.feature_title{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #676471;
+}
+.feature_desc{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #918D9C;
+}
+
+/* **********************SignIn-section-STYLIING*************************/
+.signIn_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 209px;
+}
+.signIn_left-section{
+    width: 38%;
+}
+.signIn_right-section{
+    width: 58%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background: url(./Assets/SignIn-section/Vector\ 2.svg);
+    background-size: 100% 100%;
+    height: 765px;
+    padding-right: 209px;
+}
+.signIn-title{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: #1E283C;
+    margin-bottom: 88px;
+}
+.signIn_downloads{
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 90px;
+    text-align: center;
+    background: -webkit-linear-gradient(89.57deg, #229ED7 7.77%, #7432E8 99.65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom:132px
+}
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+.input_title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    display: block;
+    color: #1E283C;
+}
+.input-box{
+    width: 537px;
+    height: 665px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-box{
+    width: 68%;
+}
+#input{
+    height: 40px;
+    border: 1px solid #00000066;
+    padding-left:10px;
+    font-size:18px;
+    border-radius:5px;
+    margin-bottom: 32px;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#input:focus{
+    outline: none;
+}
+.signin{
+    width: 180px;
+    height: 46px;
+    background: linear-gradient(270deg, #239ED8 0%, #6942E6 100%);
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    outline: none;
+    border: none;
+    cursor:pointer;
+    box-shadow: -3px -3px 24px rgb(30 40 60 / 3%), 12px 12px 24px rgb(30 40 60 / 8%);
+    transition: all 500ms ease;
+    display: block;
+    margin-top: 20px;
+}
+.signin:hover{
+    box-shadow: -3px -3px 24px rgba(30, 40, 60, 0.06), 12px 12px 24px rgba(30, 40, 60, 0.16);
+    transform: scale(1.008, 1.008) translateY(-4px);
+    background: linear-gradient(90deg, #239ED8 0%, #6942E6 100%);
+
+}
+.contact-details{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin-top: 56px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.phone-no{
+    padding-right: 20px;
+}
+.contact_title{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1E283C;
+    padding-left: 5px;
+}
+
+/* **********************Download-section-STYLIING*************************/
+.download_section{
+    padding: 150px 120px 80px;
+    background-image: url(./Assets/application-download-section/Download-application-background.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.store_app,.qr_code{
+    text-align: center;
+}
+.store_app{
+    margin-bottom: 28px;
+}
+.download_img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.download_title{
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 82px;
+    color: #000000;
+    margin-bottom: 60px;
+}
+.down{
+    margin-bottom: 30px;
+}
+.play{
+    width: 13.5rem;
+}
+.app{
+    width: 14.5rem;
+}
+
+/* **********************Footer-section-STYLIING*************************/
+.footer-section{
+    background: url(./Assets/Footer-section/Footer-background.svg) no-repeat;
+    text-align: center;
+    padding: 40px 0px;
+}
+.wide{
+    width: 30%;
+    margin-bottom: 40px;
+}
+.canva-logo{
+    margin-bottom: 30px;
+}
+.copyright{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.grid-title{
+    margin-bottom: 10px;
+}
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>STYLING ENDS HERE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* **********************************>>>MEDIA QUERRY's<<<************************************ */
+
+/* >>>>><<<<<>>>>><<<<<>>>>><<<<<>>>>1600px-1400px<<<<<>>>><<<<>>>>><<<<<>>>>><<<<>>>>> */
+@media(min-width:1401px) and (max-width:1600px){
+    /* hero-section */
+    .hero_left-section {
+        padding: 122px 0px 0px 100px;
+        width: 47%;
+    }
+    .hero_tagline {
+        font-size: 65px;
+        line-height: 80px;
+    }
+    .countDown-box {
+        width: 90px;
+        height: 90px;
+    }
+    .digit {
+        font-size: 34px;
+    }
+    .time {
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .countDown_boxes {
+        width: 27rem;
+    }
+    .phone-illustration{
+        height: 36rem;
+        width: 17rem;
+    }
+    .phone-illustration-3 {
+        right: -6rem;
+        top: -26rem;
+    }
+    .phone-illustration-2 {
+        right: 17rem;
+    }
+    .phone-illustration-1 {
+        right: 14rem;
+        top: 8.5rem;
+    }
+    .phone-illustration-1.active {
+        right: 18rem;
+        top: 11.5rem;
+        transform: scale(1.2, 1.1);
+    }
+    /* feature-section */
+    .feature-section {
+        padding: 87px 109px 140px;
+    }
+    .features {
+        width: 48%;
+    }
+    .feature_cards {
+        grid-column-gap: 15px;
+    }
+    .feature_desc {
+        line-height: 20px;
+    }
+    /* signIn-section */
+    .signIn_section {
+        padding-left: 109px;
+    }
+    .signIn_downloads {
+        font-size: 64px;
+        line-height: 80px;
+    }
+    .signIn_right-section {
+        width: 50%;
+        background-size: cover;
+        height: 630px;
+        padding-right: 109px;
+    }
+    .input-box {
+        width: 490px;
+        height: 520px;
+    }
+    .signIn-title {
+        margin-bottom: 60px;
+    }
+    .signIn_downloads {
+        margin-bottom: 100px;
+    }    
+    /* Download section */
+    .download_section {
+        padding: 80px 109px;
+    }
+    .download_preview img{
+        height: 27rem;
+        width: 43rem;
+    }
+    .download_title{
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+    .qr-code{
+        width: 6rem;
+    }
+    .download-store{
+        width: 12rem;
+    }
+}
+
+/* >>>>><<<<<>>>>><<<<<>>>>><<<<<>>>>1201px-1400px<<<<<>>>><<<<>>>>><<<<<>>>>><<<<>>>>> */
+@media(min-width:1201px) and (max-width:1400px){
+    /* hero-section */
+    .hero_left-section {
+        padding: 122px 0px 0px 100px;
+        width: 47%;
+    }
+    .hero_tagline {
+        font-size: 55px;
+        line-height: 80px;
+    }
+    .countDown-box {
+        width: 90px;
+        height: 90px;
+    }
+    .digit {
+        font-size: 34px;
+    }
+    .time {
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .countDown_boxes {
+        width: 27rem;
+    }
+    .phone-illustration{
+        height: 34rem;
+        width: 17rem;
+    }
+    .phone-illustration-3 {
+        right: -6rem;
+        top: -20rem;
+    }
+    .phone-illustration-2 {
+        right: 12rem;
+    }
+    .phone-illustration-2.active {
+        top: -27rem;
+    }
+    .phone-illustration-4 {
+        top: 3rem;
+        right: -14rem;
+    }
+    .phone-illustration-1 {
+        right: 13rem;
+        top: 11.5rem;
+    }
+    .phone-illustration-1.active {
+        right: 19rem;
+        top: 12.5rem;
+        transform: scale(1.2, 1.1);
+    }
+    /* feature-section */
+    .feature-section {
+        padding: 87px 109px 140px;
+    }
+    .features {
+        width: 48%;
+    }
+    .small-elipse {
+        position: absolute;
+        left: -7rem;
+    }    
+    .feature_cards {
+        grid-column-gap: 10px;
+        margin-top: 55px;
+    }
+    .feature_desc {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .elipse-background {
+        width: 25rem;
+        height: 25rem;
+    }
+    .feature_saly-image {
+        width: 35rem;
+    }
+    .title_Desc {
+        line-height: 32px;
+        width: auto;
+    }
+    .feature_title {
+        font-size: 20px;
+    }
+    /* signIn-section */
+    .signIn_section {
+        padding-left: 109px;
+    }
+    .signIn_downloads {
+        font-size: 64px;
+        line-height: 80px;
+    }
+    .signIn_right-section {
+        width: 58%;
+        background-size: cover;
+        height: 630px;
+        padding-right: 109px;
+    }
+    .input-box {
+        width: 440px;
+        height: 520px;
+    }
+    .flex-box{
+        width: 70%;
+    }
+    .signIn_left-section {
+        width: 36%;
+    }
+    .signIn-title {
+        margin-bottom: 60px;
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .signIn_downloads {
+        margin-bottom: 100px;
+        font-size: 54px;
+        line-height: 65px;    
+    }  
+    .social-links {
+        width: 100%;
+    }  
+    /* Download section */
+    .download_section {
+        padding: 80px 90px;
+    }
+    .download_preview img{
+        height: 27rem;
+        width: 43rem;
+    }
+    .download_title{
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+    .qr-code{
+        width: 6rem;
+    }
+    .download-store{
+        width: 9.5rem;
+    }
+    .wide{
+        width: 40%;
+    }
+}
+
+/* >>>>><<<<<>>>>><<<<<>>>>><<<<<>>>>993px-1200px<<<<<>>>><<<<>>>>><<<<<>>>>><<<<>>>>> */
+@media(min-width:993px) and (max-width:1200px){
+    /* hero-section */
+    .hero-section {
+        background-size: cover;
+        height: 85vh;
+    }
+    .hero_left-section {
+        padding: 122px 0px 0px 80px;
+        width: 47%;
+    }
+    .hero_tagline {
+        font-size: 46px;
+        line-height: 55px;
+    }
+    .countDown-box {
+        width: 70px;
+        height: 70px;
+        padding: 10px 0px;
+    }
+    .digit {
+        font-size: 34px;
+    }
+    .time {
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .countDown_boxes { 
+       width: 19.5rem;
+    }
+    .phone-illustration{
+        height: 30rem;
+        width: 15rem;
+    }
+    .phone-illustration-3 {
+        right: -7rem;
+        top: -22rem;
+    }
+    .phone-illustration-2 {
+        right: 11rem;
+        top: -24rem;
+    }
+    .phone-illustration-2.active {
+        top: -27rem;
+    }
+    .phone-illustration-4 {
+        top: 3rem;
+        right: -12rem;
+    }
+    .phone-illustration-1 {
+        right: 9rem;
+        top: 5.5rem;
+    }
+    .phone-illustration-1.active {
+        right: 12rem;
+        top: 9.5rem;
+        transform: scale(1.2, 1.1);
+    }
+    /* grid-section */
+    .grid-section {
+        padding: 100px 80px;
+    }
+    .animation_area {
+        width: 100%;
+    }
+    .flex_area_1 {
+        grid-template-columns: 6.5rem 25.5rem 14rem;
+        grid-column-gap: 30px;
+    }
+    .small_box {
+        font-size: 35px;
+        line-height: 32px;
+    }
+    .canva__icon {
+        height: 55%;
+    }
+    .canva_icon, .small_box, .big_box, .box {
+        border-radius: 20px;
+        font-weight: 600;
+    }
+    .flex_area_2 {
+        margin-top: 30px;
+        grid-template-columns: 24rem 7.5rem 15.5rem;
+        grid-column-gap: 30px;
+    }
+    .flex_area_3 {
+        margin-top: 30px;
+        grid-template-columns: 24rem 16.5rem 6.5rem;
+        grid-column-gap: 30px;
+    }    
+    .big_box {
+        font-size: 42px;
+    }
+    /* feature-section */
+    .feature-section {
+        padding: 60px 80px 100px;
+    }
+    .features {
+        width: 48%;
+    }
+    .small-elipse {
+        position: absolute;
+        left: -7rem;
+    }    
+    .feature_cards {
+        grid-column-gap: 10px;
+        margin-top: 40px;
+    }
+    .feature_desc {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .elipse-background {
+        width: 20rem;
+        height: 20rem;
+    }
+    .feature_saly-image {
+        width: 30rem;
+    }
+    .title_Desc {
+        display: none;
+    }
+    .feature{
+        flex-direction: column;
+    }
+    .feature_card-img{
+        height: 5rem;
+    }
+    .feature_det {
+        text-align: center;
+        padding: 0px;
+    }
+    .feature_title {
+        font-size: 20px;
+    }
+    /* signIn-section */
+    .signIn_section {
+        padding-left: 60px;
+    }
+    .signIn_downloads {
+        font-size: 64px;
+        line-height: 80px;
+    }
+    .signIn_right-section {
+        width: 61%;
+        background-size: cover;
+        height: 630px;
+        padding-right: 60px;
+    }
+    .input-box {
+        width: 390px;
+        height: 520px;
+    }
+    .flex-box{
+        width: 80%;
+    }
+    .signIn_left-section {
+        width: 36%;
+    }
+    .signIn-title {
+        margin-bottom: 60px;
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .signIn_downloads {
+        margin-bottom: 80px;
+        font-size: 45px;
+        line-height: 50px;   
+    }  
+    .social-links {
+        width: 100%;
+    }  
+    .ico{
+        width: 3rem;
+    }
+    .contact-details {
+        margin-top: 40px;
+    }
+    /* Download section */
+    .download_section {
+        padding: 80px 35px;
+    }
+    .download_preview{
+        width: 61%;
+    }
+    .download_preview img{
+        width:100%
+    }
+    .download_title{
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+    .download_store{
+        width: 36%;
+    }
+    .qr-code{
+        width: 6rem;
+    }
+    .download-store{
+        width: 100%;
+    }
+    .wide{
+        width: 40%;
+    }
+}
+
+
+/* >>>>><<<<<>>>>><<<<<>>>>><<<<<>>>>993px-1200px<<<<<>>>><<<<>>>>><<<<<>>>>><<<<>>>>> */
+@media(min-width:768px) and (max-width:992px){
+    /* hero-section */
+    .hero-section {
+        background-size: cover;
+        height: 90vh;
+    }
+    .hero_left-section {
+        padding: 122px 0px 0px 80px;
+        width: 53%;
+    }
+    .hero_tagline {
+        font-size: 46px;
+        line-height: 55px;
+    }
+    .countDown-box {
+        width: 70px;
+        height: 70px;
+        padding: 10px 0px;
+    }
+    .digit {
+        font-size: 34px;
+    }
+    .time {
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .countDown_boxes { 
+       width: 19.5rem;
+    }
+    .phone-illustration{
+        height: 30rem;
+        width: 15rem;
+    }
+    .phone-illustration-3 {
+        display: none;
+        right: -7rem;
+        top: -22rem;
+    }
+    .phone-illustration-2 {
+        display: none;
+        right: 11rem;
+        top: -24rem;
+    }
+    .phone-illustration-2.active {
+        top: -27rem;
+    }
+    .phone-illustration-4 {
+        display: none;
+        top: 3rem;
+        right: -12rem;
+    }
+    .phone-illustration-1 {
+        right: 4rem;
+        top: 7.5rem;
+        transform: revert;
+    }
+    .phone-illustration-1.active {
+        right: 4rem;
+        top: 7.5rem;
+        transform: revert;
+    }
+    /* Grid section */
+    .grid-section {
+        padding: 0px 70px;
+        padding-bottom: 130px;
+    }
+    .flex_area_1 {
+        grid-template-columns: 5.5rem 19rem 11rem;
+        grid-column-gap: 20px;
+    }
+    .canva__icon {
+        height: 64%;
+    }
+    .small_box {
+        font-size: 28px;
+        line-height: 25px;
+    }
+    .big_box {
+        font-weight: 800;
+        font-size: 30px;
+        padding: 0px;
+    }
+    .animation_area {
+        width: 100%;
+    }
+    .canva_icon, .big_box, .small_box, .box {
+        border-radius: 15px;
+    }
+    .flex_area_2 {
+        grid-template-columns: 15rem 6.5rem 14rem;
+        grid-column-gap: 20px;
+    }
+    .flex_area_3 {
+        grid-template-columns: 17rem 12rem 6.5rem;
+        grid-column-gap: 20px;
+    }
+    /* feature-section */
+    .feature-section {
+        padding: 40px 70px;
+    }
+    .features {
+        width: 48%;
+    }
+    .feature-img {
+        padding-top: 6rem;
+    }
+    .small-elipse {
+        position: absolute;
+        left: -7rem;
+    }    
+    .feature_cards {
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0px;
+        margin-top: 0px;
+        grid-row-gap: 10px;
+    }
+    .feature {
+        justify-content: center;
+    }
+    .feature_desc {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .elipse-background {
+        width: 17rem;
+        height: 17rem;
+    }
+    .saly-img {
+        top: 5rem;
+        left: -4rem;
+    }
+    .feature_saly-image {
+        width: 25rem;
+    }
+    .feature_section-title {
+        font-size: 38px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .title_Desc {
+        display: none;
+    }
+    .feature_card-img{
+        height: 5rem;
+    }
+    .feature_det {
+        text-align: center;
+        padding: 0px;
+    }
+    .feature_title {
+        font-size: 20px;
+    }
+    .hide{
+        display: none;
+    }
+    /* signIn-section */
+    .signIn_section {
+        padding: 0px 70px;
+        background: url(./Assets/SignIn-section/Group\ 30.png);
+        background-size: 100% 100%;
+        justify-content: center;
+    }
+    .signIn_downloads {
+        font-size: 64px;
+        line-height: 80px;
+    }
+    .signIn_right-section {
+        width: 100%;
+        padding-right: 0px;
+        background-size: cover;
+        height: 630px;
+        padding-right: 60px;
+        background: none;
+    }
+    .input-box {
+        width: 84%;
+        height: 520px;
+    }
+    .flex-box{
+        width: 75%;
+    }
+    .signIn_left-section {
+        display: none;
+    }
+    .contact_title {
+        padding-left: 2px;
+    }
+    .phone-no {
+        padding-right: 8px;
+    }
+    .input_title {
+        font-size: 20px;
+    }
+    #input {
+        margin-bottom: 25px;
+    }
+    .signIn-title {
+        margin-bottom: 50px;
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .signIn_downloads {
+        margin-bottom: 70px;
+        font-size: 29px;
+        line-height: 40px; 
+    }  
+    .social-links {
+        width: 100%;
+    }  
+    .ico{
+        width: 2.3rem;
+    }
+    .contact-details {
+        margin-top: 40px;
+    }
+    /* Download section */
+    .download_section {
+        padding: 80px 35px 120px;
+        flex-direction: column;
+    }
+    .download_preview img{
+        height: 23rem;
+        width: 38.2rem;
+    }
+    .download_title{
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+    .down{
+        display: none;
+    }
+    .qr-code{
+        width: 5rem;
+    }
+    .store_app {
+        margin: 40px 0px;
+    }
+    .download-store{
+        width: 13.5rem;
+    }
+    .wide{
+        width: 50%;
+    }
+}
+
+
+/* >>>>><<<<<>>>>><<<<<>>>>><<<<<>>>>568px-767px<<<<<>>>><<<<>>>>><<<<<>>>>><<<<>>>>> */
+@media(min-width:568px) and (max-width:767px){
+    /* hero-section */
+    .hero-section {
+        background-size: cover;
+        padding: 35px 28px;
+        height: auto;
+        display: block;
+    }
+    .hero_left-section {
+        width: 100%;
+        padding: 40px 0px 0px 0px;
+    }
+    .canva-logo {
+        padding-bottom: 20px;
+    }
+    .canva-logo {
+        margin-bottom: 15px;
+    }
+    .releasing-section {
+        margin-top: 40px;
+    }
+    .releasing-title {
+        line-height: 32px;
+        margin-top: 25px;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 40px;
+        color: #1E273B;
+    }
+    .hero_tagline {
+        font-size: 46px;
+        line-height: 55px;
+    }
+    .hidden{
+        padding: 20px 0px;
+    }
+    .countDown-box {
+        width: 80px;
+        height: 80px;
+        padding: 10px 0px;
+        box-shadow: none;
+    }
+    .digit {
+        font-size: 35px;
+    }
+    .time {
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .countDown_boxes { 
+        width: 80%;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .download_preview{
+        display: flex;
+        justify-content: center;
+    }
+    .hero_right-section {
+        display: none;
+    }
+    .hidden-img{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .mid {
+        height: 29rem;
+    }    
+    /* Grid Section */
+    .grid-section {
+        padding: 60px 50px 80px;
+    }
+    .grid_wrapper {
+        margin-top: 3.5rem;
+    }
+    .animation_area {
+        width: 100%;
+    }
+    .flex_area_1,.flex_area_2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 1.8rem;
+    }
+    .canva_icon, .small_box, .big_box, .box {
+        font-weight: 600;
+        padding: 15px 0px;
+        font-size: 30px;
+        border-radius: 16px;
+    }
+    .flex_area_2{
+        margin-top: 1.8rem;
+    }
+    .flex_area_3{
+        display: none;
+    }
+    .canva_icon {
+        display: none;
+    }
+    /* feature-section */
+    .feature-section {
+        padding: 60px 50px;
+        text-align: center;
+    }
+    .features {
+        width: 100%;
+    }
+    .feature-img {
+        display: none;
+    }
+    .small-elipse {
+        position: absolute;
+        right: -3rem;
+        top: -3rem;
+    }    
+    .feature_cards {
+        margin-top: 65px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 40px;
+        grid-column-gap: 20px;
+    }
+    .feature{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .feature_desc {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .elipse-background {
+        width: 17rem;
+        height: 17rem;
+    }
+    .saly-img {
+        top: 5rem;
+        left: -4rem;
+    }
+    .feature_saly-image {
+        width: 25rem;
+    }
+    .feature_section-title {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    .title_Desc {
+        line-height: 26px;
+        width: auto;
+        font-size: 16px;
+        text-align: center;
+    }
+    .title_Desc span{
+        display: none;
+    }
+    .feature_card-img{
+        height: 5rem;
+    }
+    .feature_det {
+        text-align: center;
+        padding: 0px;
+    }
+    .feature_title {
+        font-size: 20px;
+    }
+    .hide{
+        display: none;
+    }
+    /* Sign in section */
+    .signIn_section {
+        padding: 40px 50px;
+        background: url(./Assets/SignIn-section/Group\ 30.png);
+        background-size: cover;
+    }
+    .signIn_left-section {
+        display: none;
+    }
+    .signIn_right-section {
+        padding: 40px 0px;
+        width: 100%;
+        height: auto;
+        background: none;
+        display: block;
+    }
+    .signIn-title {
+        font-size: 45px;
+        line-height: 60px;
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+    .input-box {
+        width: 100%;
+        padding: 50px 0px;
+        margin: auto;
+        height: auto;
+    }
+    .flex-box {
+        width: 75%;
+    }
+
+    /* Download section */
+    .download_section {
+        padding: 40px 30px 70px;
+        display: block;
+    }
+    .download_preview img{
+        height: 18rem;
+        width: 31.2rem;
+    }
+    .download_title{
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+    .download_store{
+        margin-top: 20px;
+    }
+    .down{
+        display: none;
+    }
+    .qr-code{
+        width: 5rem;
+    }
+    .download_img {
+        justify-content: center;
+    }
+    .download-store{
+        width: 13.5rem;
+    }
+    .wide{
+        width: 60%;
+    }
+}
+
+
+/* >>>>><<<<<>>>>><<<<<>>>>><<<<<>>>>568px-767px<<<<<>>>><<<<>>>>><<<<<>>>>><<<<>>>>> */
+@media(max-width:567px){
+    /* hero-section */
+    .hero-section {
+        padding: 10px 16px 35px;
+        height: auto;
+        display: block;
+        background: linear-gradient(167.42deg, #209FD6 0%, #7530E9 96.51%);
+    }
+    .hero_left-section {
+        width: 100%;
+        padding: 40px 0px 20px;
+    }
+    .canva-logo {
+        padding-bottom: 0px;
+        width: 135px;
+        height: 59px;
+    }
+    .mid-img{
+        width: 100%;
+    }
+    .canva-logo {
+        margin: auto;
+        width: 114px;
+        height: 67px;
+        margin-bottom: 15px;
+    }
+    .releasing-section {
+        margin-top: 60px;
+    }
+    .releasing-title {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .hero_tagline {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .hidden{
+        padding: 20px 0px;
+    }
+    .countDown-box {
+        padding: 10px 0px;
+        box-shadow: none;
+        background: #ffffff;
+        width: 80px;
+        height: 90px;
+    }
+    .digit {
+        font-size: 32spx;
+    }
+    .time {
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .countDown_boxes { 
+        width: 100%;
+        justify-content: space-between;
+    }
+    .download_preview{
+        display: flex;
+        justify-content: center;
+    }
+    .hero_right-section {
+        display: none;
+    }
+    .hidden-img{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .mid {
+        height: 29rem;
+    } 
+    /* Grid Section */
+    .grid-section {
+        padding: 60px 20px 80px;
+    }
+    .grid_wrapper {
+        margin-top: 3.5rem;
+    }
+    .animation_area {
+        width: 100%;
+    }
+    .flex_area_1,.flex_area_2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 1.8rem;
+    }
+    .canva_icon, .small_box, .big_box, .box {
+        font-weight: 600;
+        padding: 15px 0px;
+        font-size: 30px;
+        border-radius: 16px;
+    }
+    .flex_area_2{
+        margin-top: 1.8rem;
+    }
+    .flex_area_3{
+        display: none;
+    }
+    .canva_icon {
+        display: none;
+    }
+    /* feature-section */
+    .feature-section {
+        padding: 60px 20px;
+    }
+    .features {
+        width: 100%;
+    }
+    .feature-img {
+        display: none;
+    }
+    .small-elipse {
+        position: absolute;
+        right: -1rem;
+        top: -7rem;
+    }    
+    .feature_cards {
+        margin-top: 35px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 15px;
+        grid-column-gap: 20px;
+    }
+    .feature{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .feature_desc {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .elipse-background {
+        width: 17rem;
+        height: 17rem;
+    }
+    .saly-img {
+        top: 5rem;
+        left: -4rem;
+    }
+    .feature_saly-image {
+        width: 25rem;
+    }
+    .feature_section-title {
+        font-size: 32px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .title_Desc {
+        line-height: 26px;
+        width: auto;
+        font-size: 16px;
+        text-align: center;
+    }
+    .title_Desc span{
+        display: none;
+    }
+    .feature_card-img{
+        height: 5rem;
+    }
+    .feature_det {
+        text-align: center;
+        padding: 0px;
+    }
+    .feature_title {
+        font-size: 20px;
+    }
+    /* Sign in section */
+    .signIn_section {
+        padding: 40px 20px;
+        background: url(./Assets/SignIn-section/Group\ 30.png);
+        background-size: cover;
+    }
+    .signIn_left-section {
+        display: none;
+    }
+    .signIn_right-section {
+        padding: 40px 0px;
+        width: 100%;
+        height: auto;
+        background: none;
+        display: block;
+    }
+    .signIn-title {
+        font-size: 32px;
+        width: 70%;
+        margin: auto;
+        line-height: 60px;
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+    .input-box {
+        width: 100%;
+        padding: 50px 0px;
+        height: auto;
+    }
+    .flex-box {
+        width: 80%;
+    }
+    .input_title {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .signin {
+        width: 130px;
+    }
+    .contact_title {
+        font-weight: 500;
+        font-size: 13px;
+    }
+    .phone-no{
+        padding-right: 8px;
+    }
+
+    /* Download section */
+    .download_section {
+        padding: 80px 16px 70px;
+        display: block;
+    }
+    .download_preview img{
+        height: auto;
+        width: 100%;
+    }
+    .download_title{
+        font-size: 35px;
+        line-height: 35px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+    .download_store{
+        margin-top: 20px;
+    }
+    .footer-section {
+        padding: 20px 0px;
+    }
+    .down{
+        display: none;
+    }
+    .qr-code{
+        width: 5rem;
+    }
+    .download_img {
+        justify-content: center;
+    }
+    .download-store{
+        width: 10.5rem;
+    }
+    .wide{
+        width: 70%;
+    }
+    .mobile-width{
+        width: 2.5rem;
+    }
+    .logo-width{
+        width: 7.5rem;
+    }
+    .copyright{
+        margin-top: 30px;
+        font-size: 14px;
+    }
+}
